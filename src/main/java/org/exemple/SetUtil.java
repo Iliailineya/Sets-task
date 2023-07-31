@@ -1,18 +1,15 @@
 package org.exemple;
 
-import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class SetUtil {
-    public static Set<String> createFruitsSet() {
-        Set<String> fruits = new HashSet<>();
+    public static void FillFruitsSet(Set<String> fruits) {
         fruits.add("orange");
         fruits.add("apple");
         fruits.add("kiwi");
         fruits.add("strawberry");
         fruits.add("mango");
-        return fruits;
     }
 
     public static void updateFruits(Set<String> fruits, String newFruit) {
